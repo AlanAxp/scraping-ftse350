@@ -39,7 +39,7 @@ for url in urls:
     nombres_ += nomb
     
     
-#Para obtener la informacion de los sectores
+# Para obtener la informacion de los sectores
 
 links = list()
 for url in urls:
@@ -55,7 +55,7 @@ for url in urls:
     hiper_links = list(set(hrefs))
     links += hiper_links
 
-#Para unir los link y obtener la siguiente pagin---
+# Para unir los link y obtener la siguiente pagina
 
 base = "https://www.londonstockexchange.com/"
 termination = "/our-story"
@@ -67,7 +67,7 @@ for ref in links:
     links_sectors.append(link_creation)
     stock_for_reference.append(aux_var)
     
-#Para obtener los sectores hay que hacer nuevamente web scraping
+# Para obtener los sectores hay que hacer nuevamente web scraping
 
 sectors = list()
 for link_sectors in links_sectors:
@@ -76,7 +76,7 @@ for link_sectors in links_sectors:
     nom_sector = soup.find_all("div", class_ = r"bold-font-weight regular-font-size" )[2].text
     sectors.append(nom_sector)
     
-#Dictioario para relacionar stocks con sectores!
+# Diccioario para relacionar stocks con sectores
 
 stocks_sectors = dict(zip(stock_for_reference, sectors))
 stocts_companies = dict(zip(stocks_, nombres_))
