@@ -5,3 +5,16 @@ Código que implementa la técnica de *web scraping* para extraer la informació
 
 ### Para ejecutar el codigo
 
+Instalar la libreria BeautifulSoup
+
+```bash
+pip install beautifulsoup4
+```
+
+Correr el código con python 
+
+```bash
+python3 scraping.py
+```
+
+Se obtiene un archivo `.csv` con los datos de los stocks y nombres de las 350 compañias.
