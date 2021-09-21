@@ -1,6 +1,6 @@
 # Web Scraping
 
-Código que implementa la técnica de *web scraping* para extraer la información de las compañias que se encuentran en la bolsa de valores de Londres, directamente de la [página oficial](https://www.londonstockexchange.com/)
+Código que implementa la técnica de *web scraping* para extraer la información de las compañias que se encuentran en la bolsa de valores de Londres, directamente de su [página oficial](https://www.londonstockexchange.com/)
 
 
 ### Para ejecutar el codigo
@@ -18,3 +18,5 @@ python3 scraping.py
 ```
 
 Se obtiene un archivo `.csv` con los datos de los stocks y nombres de las 350 compañias.
+
+TODO: Poner esto en un virtual env
